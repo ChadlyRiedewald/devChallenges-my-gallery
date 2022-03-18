@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap");
+/* TABLE OF CONTENT */
+/* ==||    1. GENERAL STYLES    ||== */
+/* ==||    2. UTILITIES         ||== */
+/* ==||    3. CONTENT           ||== */
+/* ==||    4. MEDIA QUERIES     ||== */
+/* ==========||        1. GENERAL STYLES        ||========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.page {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: #4e5150;
+  width: 100%;
+  height: 100vh;
+  justify-content: space-between;
+}
+.page__inner {
+  width: 70vw;
+  margin-inline: auto;
+}
+
+/* ==========||        2. UTILITIES             ||========== */
+.flex {
+  display: flex;
+}
+.flex--column {
+  display: flex;
+  flex-direction: column;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.margin {
+  margin: auto;
+}
+
+/* ==========||        3. CONTENT               ||========== */
+/* ==========||         3.1 PROFILE             ||========== */
+.profile__img {
+  height: 160px;
+  width: 160px;
+  margin: 6rem auto 1.6rem auto;
+  border-radius: 1.6rem;
+}
+.profile__name {
+  font-weight: 600;
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+  margin-bottom: 0.8rem;
+}
+.profile__location {
+  color: #a9a9a9;
+  font-size: 1.4rem;
+  margin-bottom: 2.4rem;
+}
+.profile__cards {
+  gap: 2.4rem;
+}
+
+.card-item {
+  background-color: #e5e5e5;
+  width: 10rem;
+  height: 6.7rem;
+  border-radius: 1.6rem;
+}
+.card-item__head {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.card-item__body {
+  color: #bdbdbd;
+  font-size: 1.4rem;
+}
+
+/* ==========||         3.2 GALLERY             ||========== */
+.gallery {
+  gap: 2.4rem;
+  margin-top: 6.4rem;
+  margin-bottom: 16rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "img1 img2 img2" "img3 img3 img4" "img5 img6 img4";
+}
+.gallery__img {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  height: 100%;
+  border-radius: 1.2rem;
+}
+.gallery__img--1 {
+  grid-area: img1;
+}
+.gallery__img--2 {
+  grid-area: img2;
+}
+.gallery__img--3 {
+  grid-area: img3;
+}
+.gallery__img--4 {
+  grid-area: img4;
+}
+.gallery__img--5 {
+  grid-area: img5;
+}
+.gallery__img--6 {
+  grid-area: img6;
+}
+
+/* ==========||         3.3 FOOTER              ||========== */
+.footer__text {
+  color: #a9a9a9;
+  font-size: 1.4rem;
+  margin: 0 auto 2.4rem auto;
+  text-align: center;
+  width: 100%;
+}
+.footer__link {
+  color: #a9a9a9;
+  text-decoration: none;
+}
+
+/* ==========||        4. MEDIA QUERIES         ||========== */
