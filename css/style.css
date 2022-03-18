@@ -136,3 +136,18 @@ html {
 }
 
 /* ==========||        4. MEDIA QUERIES         ||========== */
+@media (max-width: 830px) {
+  .page__inner {
+    width: 95vw;
+    margin-inline: auto;
+  }
+
+  .profile__img {
+    margin-top: 3.6rem;
+  }
+
+  .gallery {
+    gap: 1.4rem;
+    margin-block: 4.8rem;
+  }
+}
