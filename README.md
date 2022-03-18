@@ -1,6 +1,4 @@
-**# devChallenges-my-gallery
-devChallenges.io - My Gallery
-**<!-- Please update value in the {}  -->
+<!-- Please update value in the {}  -->
 
 <h1 align="center">My Gallery</h1>
 
